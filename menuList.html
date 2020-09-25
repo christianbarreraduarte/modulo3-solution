@@ -1,0 +1,10 @@
+<h3>Title: {{ menu.myTitle }} </h3>
+<ol>
+  <li ng-repeat="item in menu.items">
+    {{ item.name }}, {{ item.short_name }}, {{ item.description }}
+    <a href="" ng-click="menu.onRemove({indice: $index});">
+      Don't want this one!
+    </a>
+  </li>
+</ol>
+<div class="error" ng-if="!menu.foundElements()">Nothing found</div>
