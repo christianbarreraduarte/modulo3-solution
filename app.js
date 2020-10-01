@@ -45,7 +45,7 @@ function NarrowItDownController(MenuSearchService) {
 
   var promise = MenuSearchService.getAllMenuItems();
   menu.title = "Found Items List";
-  menu.cadenaDeBusqueda = "rice";
+  menu.cadenaDeBusqueda = "";
   var losItems;
 
   promise.then(function (response) {
